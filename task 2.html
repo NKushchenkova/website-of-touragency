@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Решение алгоритмической задачи</title>
+    <style>
+        body {
+            margin: 0%;
+        }
+
+        .header {
+            background-image: url("./images/background_about.webp");
+            height: 50%;
+            width: 80;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        body {
+            background-color: #d6c3ad;
+        }
+
+        .nav-item {
+            color: #4e353e;
+            margin-top: 5%;
+            text-decoration: none;
+            margin-right: 90px;
+            font-size: 25px;
+        }
+
+        .nav-item:last-child {
+            margin-right: 0;
+        }
+
+        .nav-item:hover {
+            color: #970a58;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            padding-top: 7px;
+        }
+
+        #formulation {
+            font-size: 2pc;
+            color: #4e353e;
+            text-align: center;
+            padding: 10px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.342);
+            margin-top: 3pc;
+            margin-left: 20%;
+            width: 60%;
+        }
+
+        #search {
+            font-size: 150%;
+            margin-left: 5%;
+            margin-top: 2%;
+        }
+
+        #task {
+            font-size: 100%;
+            background-color: #e3dddd;
+        }
+
+        #seatNumber {
+            padding: 0.5pc;
+            background-color: #e3dddd;
+            margin-left: 2%;
+            margin-bottom: 2%;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.342);
+            color: #7b6b57;
+            font-size: 2pc;
+        }
+
+        input[type="number"] {
+            padding: 10px;
+            width: 100px;
+        }
+
+        button {
+            padding: 10px;
+            margin-left: 10%;
+            text-align: center;
+            color: #e3dddd;
+            font-size: 1pc;
+            background-color: #7b6b57;
+            width: 15pc;
+        }
+
+        #result {
+            margin-top: 30px;
+            font-weight: bold;
+            font-size: 150%;
+            background-color: #e3dddd;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #7b6b57;
+            color: #e3dddd;
+            margin-top: 20%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="nav">
+            <a class="nav-item" href="main.html" target="_self">Главная</a>
+            <a class="nav-item" href="about.html" target="_self">О нас</a>
+            <a class="nav-item" href="services.html" target="_self">Услуги</a>
+            <a class="nav-item" href="contact.html" target="_self">Контакты</a>
+            <a class="nav-item" href="passport.html" target="_self">Паспорт</a>
+            <a class="nav-item" href="latin.html" target="_self">Паспорт 2</a>
+            <a class="nav-item" href="task 1.html" target="_self">Задача №1</a>
+            <a class="nav-item" href="task 2.html" target="_self"><b>Задача №2</b></a>
+        </div>
+        <hr id="line" width="100%" color="#736473" size="4px" style="margin-top: 3.6vh;">
+    </div>
+
+    <p name="formulation" id="formulation">Определить по заданному номеру места в плацкартном вагоне вид места: верхнее
+        или нижнее, в купе или боковое</p>
+    <form action="https://www.bing.com/search?" id="seatForm" name="seatForm" target="_blank"
+        onsubmit="return determineSeatType();">
+
+        <ul>
+            <li id="search">
+                Для поисковика:
+                <input name="q" value="search" id="task">
+            </li> <br>
+            <li id="search">
+                Формулировка задачи <br>
+                <textarea cols="80" rows="3" id="task" name="formulation">
+            Определить по заданному номеру места в плацкартном вагоне вид места: верхнее или нижнее, в купе или боковое
+        </textarea>
+            </li>
+        </ul> <br>
+
+        <label for="seatNumber" id="search">Введите номер места:</label>
+        <input type="number" id="seatNumber" name="seatNumber" min="1" max="54" required>
+        <br>
+        <br>
+        <button id="verify" name="verify" type="submit"><i><b>Определить</b></i></button>
+        <input id="result" name="result" value="не определен"></li><br> <br>
+        <button id="send" type="send"><i><b>Отправить</b></i></button>
+        <div id="result"></div>
+    </form>
+
+
+
+    <script>
+        function determineSeatType() {
+            const seatNumber = parseInt(document.getElementById('seatNumber').value);
+            let result = '';
+
+            if (seatNumber < 1 || seatNumber > 54) {
+                result = "Некорректный номер места. В плацкартном вагоне 54 места.";
+            } else {
+                // Определяем тип места
+                const seatType = (seatNumber % 2 === 0) ? "верхнее" : "нижнее";
+
+                // Определяем, боковое ли это место
+                const location = (seatNumber > 36) ? " в боковом" : " в купе";
+
+                result = (seatType) + (location);
+            }
+
+            document.getElementById('result').value = result;
+            return false; // предотвращаем отправку формы
+        }
+
+        function send() {
+            if (result) {
+                document.getElementById("seatForm").submit();
+            } else {
+                alert("Есть недостатки. Повторите ввод")
+            }
+        }
+
+
+        const elementdetermineSeatType = document.getElementById("verify");
+        elementdetermineSeatType.addEventListener('click', verify);
+
+        const elementSend = document.getElementById("send");
+        elementSend.addEventListener('click', send)
+    </script>
+
+    <footer>
+        <p>&copy; Путешествуй вместе с "The world of travel" </p>
+    </footer>
+
+</body>
+
+</html>

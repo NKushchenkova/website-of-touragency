@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The world of travel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/icon.png" />
+</head>
+
+<body>
+
+    <button id="backToTop" onclick="scrollToTop()">Вернуться к началу</button>
+
+    <div class="header">
+        <div class="nav">
+            <a class="nav-item" href="main.html" target="_self"><b>Главная</b></a>
+            <a class="nav-item" href="about.html" target="_self">О нас</a>
+            <a class="nav-item" href="services.html" target="_self">Услуги</a>
+            <a class="nav-item" href="contact.html" target="_self">Контакты</a>
+            <a class="nav-item" href="passport.html" target="_self">Паспорт</a>
+            <a class="nav-item" href="latin.html" target="_self">Паспорт 2</a>
+            <a class="nav-item" href="task 1.html" target="_self">Задача №1</a>
+            <a class="nav-item" href="task 2.html" target="_self">Задача №2</a>
+        </div>
+
+        <hr id="line" width="100%" color="#736473" size="4px" style="margin-top: 4%;">
+    </div>
+
+    <div class="main">
+        <div class="title">Хочешь отправиться в незабываемое путешествие?</div> <br>
+    </div>
+
+    <div class="logo"><i>поиск тура он-лайн</i></div>
+    <p><a href="services.html#head"><img src="./images/logo.png" title="ПОИСК ТУРА ОН-ЛАЙН" height="60"
+                style="margin-left: 88%; margin-top: 0pc" alt="ПОИСК ТУРА ОН-ЛАЙН"></a></p>
+
+    <div class="example1"> <i>Например, насладиться прекрасными видами <a
+                href="https://wikiway.com/russia/altayskie-gory/" target="_blank"><i>Алтайских гор</i></a>, поистине
+            живописным уголком природы, где гармонично сосуществуют
+            величественные вершины, покрытые снежными шапками, и зелёные леса, усеянные цветущими лугами. Здесь можно
+            увидеть кристально чистые реки и озера, отражающие голубое небо, а также уникальные природные образования,
+            такие
+            как водопады и каньоны. Восходы и закаты на Алтае поражают своей красотой, окрашивая горные склоны в яркие
+            оттенки.</i></div><br>
+    <img src="./images/Altai.jpg" title="Алтайские горы" width="700" height="500"
+        style="margin-left: 10% ; margin-top: -25%">
+
+    <div class="example2"> <i>Восхититься красотой <a href="https://www.lagodibraies.com/" target="_blank"><i>Лаго ди
+                    Брайес</i></a>, которое является одним из самых живописных мест в Италии. Его кристально чистая вода
+            имеет яркий
+            бирюзовый оттенок, окружена величественными горными вершинами и густыми лесами. Озеро славится своими
+            живописными пейзажами, особенно на рассвете и закате, когда солнечные лучи создают волшебные отражения на
+            поверхности воды. Здесь можно наслаждаться пешими прогулками по окрестностям, кататься на лодках и просто
+            восхищаться природой, которая дарит умиротворение и вдохновение.</i></div><br>
+    <img src="./images/Italia.jpg" title="Лаго ди Брайес Италия" width="600" height="400"
+        style="margin-left: 50% ; margin-top: -25%">
+
+    <div class="start">
+        <p>Туристическое агентство <b>"The World of Travel"</b>предлагает широкий спектр услуг для любителей
+            путешествий,
+            стремящихся
+            открыть для себя новые горизонты. Наша команда профессионалов с богатым опытом в сфере туризма поможет
+            создать
+            идеальный маршрут, учитывая все ваши пожелания и предпочтения.</p>
+    </div> <br>
+
+    <div class="form" id="head1">
+        <h3>
+            Пройдите регистрацию <input type="hidden" name="q" value="search">
+        </h3>
+        <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+            <p>Фамилия: <input type="Text" name="last_name" size=20 value="Иванов"></p>
+            <p>Имя: <input type="Text" name="first_name" size=20 value="Петр"></p>
+            <p>Отчество: <input type="Text" name="patronymic" size=20 value="Семёнович"></p>
+
+            <p>Пароль: <input type="Password" name="password" size=12 value="123"></p>
+
+            <p>Возраст: <input type="Number" name="age" size=20 value="0"></p>
+
+            <p>Мобильный телефон: <input type="tel" name="tel" pattern="2[0-9]{3}-[0-9]{3}"></p>
+
+            <p>Владение языком:
+                <input type="Checkbox" name="language" value="10" checked>Английский
+                <input type="Checkbox" name="language" value="20" checked>Немецкий
+                <input type="Checkbox" name="language" value="30" checked>Испанский
+                <input type="Checkbox" name="language" value="30" checked>Итальянский
+                <input type="Checkbox" name="language" value="30" checked>Французский
+                <input type="Checkbox" name="language" value="30" checked>Другой
+            </p>
+
+            <p> Почта (e-mail):
+                <br>
+                <TEXTAREA cols=40 rows=2 name="textarea">@the_world_of_travel.com</TEXTAREA>
+            </p>
+
+            <p>
+                <button type="submit">Зарегистрироваться</button>
+            </p>
+    </div>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Прокрутка будет плавной
+            });
+        }
+
+        // Показываем кнопку, когда пользователь прокручивает вниз
+        window.onscroll = function () {
+            const button = document.getElementById('backToTop');
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                button.style.display = 'block'; // Показываем кнопку
+            } else {
+                button.style.display = 'none'; // Скрываем кнопку
+            }
+        };
+    </script>
+
+    <footer>
+        <p>&copy; Путешествуй вместе с "The world of travel" </p>
+    </footer>
+
+</body>
+
+</html>

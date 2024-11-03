@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The world of travel</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="shortcut icon" href="./images/icon.png" />
+</head>
+
+<body>
+
+    <button id="backToTop" onclick="scrollToTop()">Вернуться к началу</button>
+
+    <div class="header">
+        <div class="nav">
+            <a class="nav-item" href="main.html" target="_self">Главная</a>
+            <a class="nav-item" href="about.html" target="_self">О нас</a>
+            <a class="nav-item" href="services.html" target="_self">Услуги</a>
+            <a class="nav-item" href="contact.html" target="_self"><b>Контакты</b></a>
+            <a class="nav-item" href="passport.html" target="_self">Паспорт</a>
+            <a class="nav-item" href="latin.html" target="_self">Паспорт 2</a>
+            <a class="nav-item" href="task 1.html" target="_self">Задача №1</a>
+            <a class="nav-item" href="task 2.html" target="_self">Задача №2</a>
+        </div>
+        <hr id="line" width="100%" color="#736473" size="4px" style="margin-top: 3.6vh;">
+    </div>
+
+    <div class="main">
+        <div class="title">
+            <h2>Контактные данные</h2>
+        </div>
+
+        <div class="logo"><i>регистрация</i></div>
+        <p><a href="main.html#head1"><img src="./images/logo.png" title="РЕГИСТРАЦИЯ" height="60"
+                    style="margin-left: 88%; margin-top: 0pc" alt="РЕГИСТРАЦИЯ"></a></p>
+
+        <img src="./images/theworldoftravel.jpg" title="the_world_of_travel" width="40%"
+            style="margin-top: 10pc; margin-left: 55%;">
+
+        <div class="contact_date">
+            <b>Телефон:</b> +7 (495) 123-45-67 <br><br>
+            <b>Факс:</b><br>+7 (495) 765-43-21<br><br>
+            <b>Электронная почта:</b><br>the_world_of_travel.com<br><br>
+            <b>Адрес:</b>
+            г. Москва, ул. Путешественников, дом 10,<br>
+            офис 5,<br>
+            первый этаж,<br>
+            бизнес-центр "Мир Путешествий",<br>
+            район Арбат,<br>
+            почтовый индекс 123456<br><br>
+
+            <b>Веб-сайт: </b><br>www.the_world_of_travel.ru<br><br>
+
+            <b>Часы работы:</b><br>
+            Пн-Пт: 09:00 - 18:00<br>
+            Сб: 10:00 - 15:00<br>
+            Вс: Выходной<br><br>
+
+            <b>Социальные сети:</b><br>
+
+            <i>Facebook:</i> facebook.com/the_world_of_travel<br>
+            <i>Instagram: </i>instagram.com/the_world_of_travel<br>
+            <i>VK:</i> vk.com/the_world_of_travel
+        </div>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d143823.24260959728!2d37.52202663085025!3d55.71961307340267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54af556562d41%3A0x2eeb3543e090db01!2z0JrQu9GD0LEg0L_Rg9GC0LXRiNC10YHRgtCy0LXQvdC90LjQutC-0LIgItCc0LjRgNGLIg!5e0!3m2!1sru!2sru!4v1730575428877!5m2!1sru!2sru"
+            width="1300" height="450" style="border:0; margin-left: 8%; margin-top: 5%;" allowfullscreen=""
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <script>
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth' // Прокрутка будет плавной
+                });
+            }
+
+            // Показываем кнопку, когда пользователь прокручивает вниз
+            window.onscroll = function () {
+                const button = document.getElementById('backToTop');
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    button.style.display = 'block'; // Показываем кнопку
+                } else {
+                    button.style.display = 'none'; // Скрываем кнопку
+                }
+            };
+        </script>
+
+        <footer>
+            <p>&copy; Путешествуй вместе с "The world of travel" </p>
+        </footer>
+</body>
+
+</html>

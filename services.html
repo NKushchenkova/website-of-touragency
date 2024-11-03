@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The world of travel</title>
+    <link rel="stylesheet" href="services.css">
+    <link rel="shortcut icon" href="./images/icon.png" />
+</head>
+
+<body>
+
+    <button id="backToTop" onclick="scrollToTop()">Вернуться к началу</button>
+
+    <div class="header">
+        <div class="nav">
+            <a class="nav-item" href="main.html" target="_self">Главная</a>
+            <a class="nav-item" href="about.html" target="_self">О нас</a>
+            <a class="nav-item" href="services.html" target="_self"><b>Услуги</b></a>
+            <a class="nav-item" href="contact.html" target="_self">Контакты</a>
+            <a class="nav-item" href="passport.html" target="_self">Паспорт</a>
+            <a class="nav-item" href="latin.html" target="_self">Паспорт 2</a>
+            <a class="nav-item" href="task 1.html" target="_self">Задача №1</a>
+            <a class="nav-item" href="task 2.html" target="_self">Задача №2</a>
+        </div>
+        <hr id="line" width="100%" color="#736473" size="4px" style="margin-top: 3.6vh;">
+    </div>
+    <div class="main">
+        <div class="title">
+            <h2>Туристическое агенство - "The world of travel"</h2>
+        </div>
+
+        <div class="logo"><i>регистрация</i></div>
+        <p><a href="main.html#head1"><img src="./images/logo.png" title="РЕГИСТРАЦИЯ" height="60"
+                    style="margin-left: 88%; margin-top: 0pc" alt="РЕГИСТРАЦИЯ"></a></p>
+
+        <div class="start">
+            <p> Мы предлагаем широкий спектр туристических маршрутов. <br> Заполни <a href="#head"
+                    target="_self"><b>форму</b></a> ниже и мы подберём удобные для
+                тебя маршруты и ближайшие туры </p>
+        </div> <br><br><br>
+
+        <img src="./images/travel 1.webp" title="Moraine Lake" width="600" height="400" style="margin-left: 10%">
+        <img src="./images/travel 2.webp" title="The Grand Canyon" width="600" height="400">
+
+        <div class="form" id="head">
+            <h3>
+                <center>ПОИСК ТУРА ОН-ЛАЙН</center>
+            </h3>
+            <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+
+                <p>В какой город вы бы хотели поехать?</p>
+                <select name="city" size="4" multiple>
+                    <OPTION value="1">Москва</OPTION>
+                    <OPTION value="2">Абакан</OPTION>
+                    <OPTION value="3">Архангельск</OPTION>
+                    <OPTION value="4">Барнаул</OPTION>
+                    <OPTION value="5">Волгоград</OPTION>
+                    <OPTION value="6">Грозный</OPTION>
+                    <OPTION value="7">Екатеринбург</OPTION>
+                    <OPTION value="8">Иркутск</OPTION>
+                    <OPTION value="9">Ижевск</OPTION>
+                    <OPTION value="10">Казань</OPTION>
+                    <OPTION value="11">Красноярск</OPTION>
+                    <OPTION value="12">Нижний Новгород</OPTION>
+                    <OPTION value="13">Новосибирск</OPTION>
+                    <OPTION value="14">Саров</OPTION>
+                    <OPTION value="15">Санкт-Петербург</OPTION>
+                    <OPTION value="16">Пермь</OPTION>
+                    <OPTION value="17">Томск</OPTION>
+                    <OPTION value="18">Уфа</OPTION>
+                    <OPTION value="19">Чебоксары</OPTION>
+                    <OPTION value="20">Якутск</OPTION>
+                </select>
+
+                <p> Страна, город и отель, в котором хотели бы остановиться:
+                    <br>
+                </p>
+                <p> <TEXTAREA cols=50 rows=4 name="textarea">Страна, город и отель</TEXTAREA>
+                </p>
+
+                <p>Дата вылета: <input type="date" name="user_date" value='2024-01-01'></p>
+                <p>Продолжительность:
+                    <select name="period">
+                        <OPTION value="1">1 день</OPTION>
+                        <OPTION value="2">2 дня</OPTION>
+                        <OPTION value="3">3 дня</OPTION>
+                        <OPTION value="4">4 дня</OPTION>
+                        <OPTION value="5">5 дней</OPTION>
+                        <OPTION value="6">6 дней</OPTION>
+                        <OPTION value="7">7 дней</OPTION>
+                        <OPTION value="8">8 дней</OPTION>
+                        <OPTION value="9">9 дней</OPTION>
+                        <OPTION value="10">10 дней</OPTION>
+                        <OPTION value="11">11 дней</OPTION>
+                        <OPTION value="12">12 дней</OPTION>
+                        <OPTION value="13">13 дней</OPTION>
+                        <OPTION value="14">14 дней</OPTION>
+                        <OPTION value="15">15 дней</OPTION>
+                        <OPTION value="16">16 дней</OPTION>
+                        <OPTION value="17">17 дней</OPTION>
+                        <OPTION value="18">18 дней</OPTION>
+                        <OPTION value="19">19 дней</OPTION>
+                        <OPTION value="20">20 дней</OPTION>
+                        <OPTION value="21">21 дней</OPTION>
+                        <OPTION value="22">22 дней</OPTION>
+                        <OPTION value="23">23 дней</OPTION>
+                        <OPTION value="24">24 дней</OPTION>
+                        <OPTION value="25">25 дней</OPTION>
+                        <OPTION value="26">26 дней</OPTION>
+                        <OPTION value="27">27 дней</OPTION>
+                        <OPTION value="28">28 дней</OPTION>
+                        <OPTION value="29">29 дней</OPTION>
+                        <OPTION value="30">30 дней</OPTION>
+                    </select>
+                </p>
+                <p>Количество человек: <input type="Number" name="age" size=20 value="0"></p>
+                <p>
+                    Есть ли дети?<br>
+                    <input type="radio" name="children" value="да" checked="checked">да<br>
+                    <input type="radio" name="children" value="нет">нет<br>
+                </p>
+                <p>
+                    <button type="submit">Отправить анкету</button>
+                </p>
+        </div>
+
+        <script>
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth' // Прокрутка будет плавной
+                });
+            }
+
+            // Показываем кнопку, когда пользователь прокручивает вниз
+            window.onscroll = function () {
+                const button = document.getElementById('backToTop');
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    button.style.display = 'block'; // Показываем кнопку
+                } else {
+                    button.style.display = 'none'; // Скрываем кнопку
+                }
+            };
+        </script>
+
+        <footer>
+            <p>&copy; Путешествуй вместе с "The world of travel" </p>
+        </footer>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+body {
+    margin: 0%;
+}
+
+.header {
+    background-image: url("./images/background_about.webp");
+    height: 5%;
+    width: 100;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body {
+    background-color: #d6c3ad;
+}
+
+.nav-item {
+    color: #4e353e;
+    margin-top: 15px;
+    text-decoration: none;
+    margin-right: 90px;
+    font-size: 25px;
+}
+
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+.nav-item:hover {
+    color: #970a58;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    padding-top: 7px;
+}
+
+.title {
+    font-size: 20px;
+    color: #3b282f;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.logo {
+    margin-top: -60px;
+    margin-left: 90%;
+    font-size: 14px;
+    color: #0a0909;
+}
+
+.discription {
+    font-size: 25px;
+    width: 70vw;
+    color: #1d1b1c;
+    margin-top: -15px;
+    margin-left: 15%;
+    text-align: center;
+}
+
+.start {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    height: 4pc;
+    margin-left: 15%;
+    background: #b2a08a;
+    color: #ffffff;
+    margin-top: 3pc;
+    font-size: 20px;
+}
+
+.description {
+    font-size: 20px;
+    color: #1d1b1c;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+
+.name_table {
+    color: #3b282f;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.342);
+}
+
+.table {
+    font-size: 120%;
+    color: #4d363e;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 15pc;
+    display: none;
+    /* Скрываем кнопку по умолчанию */
+    background-color: #b88558;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#backToTop:hover {
+    background-color: #71522a;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #7b6b57;
+    color: #e3dddd;
+    margin-top: 100px;
+}

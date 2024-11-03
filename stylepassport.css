@@ -1,0 +1,125 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#lat {
+    float: right;
+}
+
+#main_fon {
+
+    height: 734px;
+    background-image: url(./images/fon.jpg);
+    background-repeat: no-repeat;
+}
+
+#pass_title {
+    padding-top: 41px;
+    padding-left: 74px;
+}
+
+.poiret-one-regular {
+    font-family: "Poiret One", sans-serif;
+    font-weight: italic;
+    font-style: normal;
+    letter-spacing: 0.8em;
+    word-spacing: 0.25em;
+}
+
+@font-face {
+
+    font-family: "Kreadon";
+
+    src: local("Kreadon.ttf"),
+
+        url(./images//Kreadon.ttf);
+
+}
+
+.vidanstr1 {
+    font-family: "Kreadon";
+    padding-top: 20px;
+    padding-left: 145px;
+}
+
+.vidanstr2 {
+    font-family: "Kreadon";
+    padding-top: 10px;
+    padding-left: 175px;
+    word-spacing: 0.65em;
+}
+
+.vidanstrdata {
+    font-family: "Kreadon";
+    padding-top: 37px;
+    padding-left: 105px;
+    word-spacing: 0.65em;
+    float: left;
+}
+
+.vidanstrcode {
+    font-family: "Kreadon";
+    padding-top: 37px;
+    padding-left: 295px;
+    word-spacing: 0.65em;
+}
+
+.podpis {
+    padding-top: 30px;
+    padding-left: 55px;
+    float: left;
+}
+
+.podpis1 {
+    padding-top: 50px;
+    padding-left: 115px;
+}
+
+.passfoto {
+    padding-top: 150px;
+    padding-left: 22px;
+    float: left;
+}
+
+#hfamilia {
+    padding-top: 110px;
+    padding-left: 250px;
+}
+
+#hname {
+    padding-top: 37px;
+    padding-left: 250px;
+}
+
+#hpatronymic {
+    padding-top: 10px;
+    padding-left: 250px;
+}
+
+.hfname {
+    padding-top: 10px;
+    padding-left: 250px;
+}
+
+.hpol {
+    padding-top: 10px;
+    padding-left: 40px;
+    float: left;
+}
+
+#hborn {
+    padding-top: 10px;
+    padding-left: 340px;
+}
+
+.hpborn1 {
+    padding-top: 6px;
+    padding-left: 250px;
+    word-spacing: 0.7em;
+}
+
+.hpborn2 {
+    padding-top: 10px;
+    padding-left: 250px;
+}

@@ -1,0 +1,134 @@
+<html>
+
+<head>
+    <meta charset="utf8">
+    <title>Изменяем кириллицу на латиницу по клику</title>
+    <link rel="stylesheet" href="stylepassport.css">
+    <link rel="shortcut icon" href="./images/icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@100;200;300;400;500;600;700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=PT+Sans+Caption:wght@400;700&family=Poiret+One&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        body {
+
+            background-image: url("./images/background_about.webp");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .nav-item {
+            color: #4e353e;
+            margin-top: 15px;
+            text-decoration: none;
+            margin-right: 90px;
+            font-size: 25px;
+        }
+
+        .nav-item:last-child {
+            margin-right: 0;
+        }
+
+        .nav-item:hover {
+            color: #970a58;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            padding-top: 7px;
+        }
+
+        .strel {
+            color: #4e353e;
+            font-size: 2pc;
+        }
+
+        button {
+            background-color: #936036;
+            color: rgb(255, 255, 255);
+            padding: 10px 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            width: 50%;
+            margin: auto;
+            margin-left: 100px;
+            transition: background-color 0.3s;
+        }
+
+        #changeButton {
+            margin-left: -5%;
+            margin-top: 4%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="nav">
+            <a class="nav-item" href="main.html" target="_self">Главная</a>
+            <a class="nav-item" href="about.html" target="_self">О нас</a>
+            <a class="nav-item" href="services.html" target="_self">Услуги</a>
+            <a class="nav-item" href="contact.html" target="_self">Контакты</a>
+            <a class="nav-item" href="passport.html" target="_self">Паспорт</a>
+            <a class="nav-item" href="latin.html" target="_self"><b>Паспорт 2</b></a>
+            <a class="nav-item" href="task 1.html" target="_self">Задача №1</a>
+            <a class="nav-item" href="task 2.html" target="_self">Задача №2</a>
+        </div>
+
+        <br>
+        <br>
+        <div class="strel" <h1 id="strel">
+            <center><b>Passport</b></center>
+            </h1>
+            <br>
+            <br>
+        </div>
+
+        <div id="main_fon">
+
+            <h5 id="pass_title" class="poiret-one-regular">РОССИЙСКАЯ ФЕДЕРАЦИЯ</h5>
+            <div id="page_top">
+                <p class="vidanstr1">ОТДЕЛОМ ВНУТРЕННИХ ДЕЛ</p>
+                <p class="vidanstr2">ГОР. НИЖНИЙ НОВГОРОД</p>
+                <p class="vidanstrdata">22.12.2019</p>
+                <p class="vidanstrcode">632-052</p>
+                <img class="podpis" src="./images/podpis1.png">
+                <img class="podpis1" src="./images/podpis.png">
+            </div>
+
+            <div id="page_bottom">
+                <img class="passfoto" src="./images/foto.jpg">
+                <p id="hfamilia"><span id="surname">КУЩЕНКОВА</span></p>
+                <p id="hname"><span id="name">НАТАЛЬЯ</span></p>
+                <p id="hpatronymic"><span id="patronymic">ЮРЬЕВНА</span></p>
+                <p class="hpol">ЖЕН.</p>
+                <p id="hborn"><span id="birthyear">26.09.2005</span></p>
+                <p class="hpborn1">ГОР. НИЖНИЙ НОВГОРОД</p>
+                <p class="hpborn2">НИЖЕГОРОДСКОЙ ОБЛ.</p>
+            </div>
+
+            <button id="changeButton" style="background-color: #875170; border-radius: 10px; width: 20pc;">
+                <h1>Изменить на латиницу</h1>
+            </button>
+
+            <script>
+                document.getElementById('changeButton').onclick = function () {
+                    document.getElementById('surname').innerText = 'KUSHCHENKOVA';
+                    document.getElementById('name').innerText = 'NATALIA';
+                    document.getElementById('patronymic').innerText = 'YURIEVNA';
+                    document.getElementById('birthyear').innerText = '26.09.MMV';
+                }
+            </script>
+        </div>
+</body>
+
+</html>
