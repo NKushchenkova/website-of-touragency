@@ -1,2 +1,1 @@
-# website-of-touragency 
-https://github.com/NKushchenkova/website-of-touragency.git
+# website-of-touragency: https://nkushchenkova.github.io/website-of-touragency/main.html
