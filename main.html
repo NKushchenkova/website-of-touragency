@@ -66,10 +66,11 @@
     </div> <br>
 
     <div class="form" id="head1">
-        <h3>
-            Пройдите регистрацию <input type="hidden" name="q" value="search">
-        </h3>
+
         <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+            <h3>
+            Пройдите регистрацию <input type="hidden" name="q" value="search">
+            </h3>
             <p>Фамилия: <input type="Text" name="last_name" size=20 value="Иванов"></p>
             <p>Имя: <input type="Text" name="first_name" size=20 value="Петр"></p>
             <p>Отчество: <input type="Text" name="patronymic" size=20 value="Семёнович"></p>
@@ -91,12 +92,13 @@
 
             <p> Почта (e-mail):
                 <br>
-                <TEXTAREA cols=40 rows=2 name="textarea">@the_world_of_travel.com</TEXTAREA>
+                <TEXTAREA cols=40 rows=2 value="textarea" name="textarea">@the_world_of_travel.com</TEXTAREA>
             </p>
 
             <p>
-                <button type="submit">Зарегистрироваться</button>
+                <button type="submit" name="submit" value="Отправить">Зарегистрироваться</button>
             </p>
+        </form>
     </div>
 
     <script>
